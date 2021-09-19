@@ -1,0 +1,144 @@
+* {
+    color: white;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(15, 72, 223, 1) 0%, rgba(24, 41, 80, 1) 81.1%);
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+}
+
+.nav-link {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.main-container {
+    /* background-image: linear-gradient( 132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%); */
+    margin-top: 0;
+    padding-top: 30vh;
+    width: 100%;
+    text-align: center;
+    height: 70vh;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#welcome-section p {
+    color: #e6efff;
+    font-size: 1.5em;
+}
+
+#projects {
+    padding: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#projects h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project-tile {
+    background-color: rgba(15, 72, 223, 1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 10px 10px 36px 1px rgba(0, 0, 0, 0.59);
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 4em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+@media screen and (max-width: 580px) {
+    .grid-container {
+        grid-template-rows: 3;
+        grid-template-columns: repeat(1, 90vw);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #navbar {
+        justify-content: space-evenly;
+    }
+    .nav-link {
+        margin: 8px;
+    }
+}
+
+.project-title {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.contact p {
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+.contact-links a::before {
+    content: "🚀";
+}
+
+footer {
+    text-align: center;
+    border-top: 5px solid rgba(15, 72, 223, 1);
+}
