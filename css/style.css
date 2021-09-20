@@ -23,7 +23,7 @@ body {
 }
 
 .nav-link {
-    margin-right: 30px;
+    margin-right: 40px;
     text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ img {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     #navbar {
         justify-content: space-evenly;
     }
