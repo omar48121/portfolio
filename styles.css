@@ -113,12 +113,68 @@ p {
 
 mark {
     animation: highlight linear forwards;
-    animation-timeline: view(60% 20%);
+    animation-timeline: view(20% 20%);
     background: linear-gradient(to right,
-    oklch(83.69% 0.114 199.41) 50%,
+            oklch(83.69% 0.114 199.41) 50%,
             oklch(0.86 0.19 84.89 / 0) 50%);
     background-position: 100%;
     background-size: 200% 100%;
     border-radius: 0.125rem;
     padding-inline: 0.125rem;
+}
+
+/* border glow  */
+@property --bg-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+}
+
+@keyframes spin {
+    to {
+        --bg-angle: 360deg;
+    }
+}
+
+
+article {
+    padding: 0 20px;
+    border-radius: 20px;
+    animation: spin 2.5s infinite linear paused;
+    background:
+        linear-gradient(to bottom,
+            oklch(0.1 0.2 240 / 0.95),
+            oklch(0.1 0.2 240 / 0.95)) padding-box,
+        /* ends at inner border edges */
+        conic-gradient(from var(--bg-angle) in oklch longer hue,
+            oklch(1 0.37 0) 0 0) border-box;
+    border: 6px solid transparent;
+
+    &:hover {
+        animation-play-state: running;
+    }
+}
+
+article>h2 {
+    color: white;
+}
+
+/* globe */
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: 100vmin;
+    max-width: 100vmin;
+    margin: 0 auto;
+}
+
+.globe {
+    height: 50vmin;
+    width: auto;
+    cursor: grab;
+}
+
+.globe--dragging {
+    cursor: grabbing;
 }

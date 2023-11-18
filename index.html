@@ -35,38 +35,50 @@
 
     <div class="content">
         <h1 id="home">Inicio.</h1>
-        <p>
-            Soy <mark>Omar Rodríguez de Luna</mark>, un entusiasta desarrollador fullstack con una pasión por la
-            creación digital. Mi objetivo
-            es transformar ideas en soluciones interactivas y atractivas. Con <mark>experiencia</mark> en desarrollo
-            front-end y
-            back-end, estoy listo para enfrentar nuevos desafíos y aprender continuamente.
-        </p>
-        <p>
-            Explora mi portafolio para descubrir <mark>proyectos</mark> emocionantes y soluciones innovadoras que he
-            desarrollado. Si
-            estás buscando un colaborador comprometido y creativo, <mark>estás en el lugar correcto</mark>.
-        </p>
+        <!-- globe -->
+    <div class="divider">
+        <div class="left-container">
+            <p>
+                Soy <mark>Omar Rodríguez de Luna</mark>, un entusiasta desarrollador fullstack con una pasión por la
+                tecnología. Mi objetivo
+                es transformar ideas en soluciones interactivas y atractivas. Con <mark>experiencia</mark> en desarrollo
+                front-end y
+                back-end, estoy listo para enfrentar nuevos desafíos y aprender continuamente.
+            </p>
+            <p>
+                Explora mi portafolio para descubrir <mark>proyectos</mark> emocionantes y soluciones innovadoras que he
+                desarrollado. Si
+                estás buscando un colaborador comprometido y creativo, <mark>estás en el lugar correcto</mark>.
+            </p>
+        </div>
+        <div class="right-container">
+            <div class="container">
+                <canvas class="globe" width="1800" height="1600"></canvas>
+            </div>
+        </div>
     </div>
+    </div>
+
     <div class="content">
         <h1 id="about">Sobre mí.</h1>
+        <br>
         <div class="divider">
             <div class="left-container">
+                <img class="profile" src="./img/omar-bg.png" alt="Omar Rodríguez" width="300">
+            </div>
+            <div class="right-container">
                 <p>
-                    Originario de Aguascalientes, México, estudiante y próximo gradudado de la Universidad Tecnológica de Aguascalientes en <mark>Ingeniería en Tecnologías de la Información y Comunicación</mark>. He estado trabajando como desarrollador web fullstack, creando soluciones digitales para empresas de diversos ramos.
+                    Originario de Aguascalientes, México, estudiante y gradudado de la Universidad Tecnológica del Norte de Aguascalientes en <mark>Ingeniería en Tecnologías de la Información y Comunicación</mark>. He estado trabajando como desarrollador fullstack, creando soluciones digitales para empresas de diversos ramos.
                 </p>
                 <p>
                     Me especializo principalmente en frontend pero no es todo lo que hago, también hago uso de tecnologías de backend para crear <mark>soluciones efectivas</mark>.
                 </p>
             </div>
-            <div class="right-container">
-                <img class="profile" src="./img/omar-bg.png" alt="Omar Rodríguez" width="300">
-            </div>
         </div>
     </div>
 
     <div class="content">
-        <h1 id="cv">Curriculum</h1>
+        <h1 id="cv">Curriculum.</h1>
         <p>Puedes descargar mi CV dando clic en el siguiente botón:</p>
     </div>
 
@@ -75,7 +87,9 @@
             <div class="card-wrapper">
               <div class="card">
                 <div class="card-image">
-                  <button class="btn-download">Descargar</button>
+                  <article>
+                    <h2>Descargar</h2>
+                  </article>
                 </div>
                 <!-- <div class="card-gradient"></div> -->
                 <div class="card-letters"></div>
@@ -84,7 +98,12 @@
           </div>
     </div>
 
+    <div class="content">
+        <h1 id="projects">Proyectos.</h1>
+    </div>
+
     <script src="./js/code.hover.js"></script>
+    <script src="./js/globe.js"></script>
 </body>
 
 </html>
