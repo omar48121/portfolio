@@ -626,11 +626,11 @@ const markers = [{
   }
   
   const drawMarkerText = (ctx, text, pos) => {
-      ctx.font = "60px 'Pirata One', cursive";
+      ctx.font = "60px 'Pirata One', sans-serif";
 
       // check if window is bellow 600px
       if(window.innerWidth < 600) {
-        ctx.font = "100px 'Pirata One', cursive";
+        ctx.font = "100px 'Pirata One', sans-serif";
       }
 
       ctx.fillStyle = 'black';

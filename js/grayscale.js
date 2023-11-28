@@ -8,7 +8,7 @@ function randomizeGrayscale() {
         } else {
             logo.style.filter = 'grayscale(0%)';
             // logo.style.transform = `translate(${Math.random() * 10}px, ${Math.random() * 10}px`;
-            logo.style.transition = 'transform 5s';
+            logo.style.transition = 'transform 0s';
         }
     });
 }
