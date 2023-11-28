@@ -7,7 +7,7 @@ function randomizeGrayscale() {
             logo.style.filter = 'grayscale(100%)';
         } else {
             logo.style.filter = 'grayscale(0%)';
-            logo.style.transform = `translate(${Math.random() * 10}px, ${Math.random() * 10}px`;
+            // logo.style.transform = `translate(${Math.random() * 10}px, ${Math.random() * 10}px`;
             logo.style.transition = 'transform 5s';
         }
     });
