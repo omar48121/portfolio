@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/code.hover.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>Portafolio</title>
+    <title>Omar Rodriguez</title>
 </head>
 
-<body>
+<body id="top">
+
+    <div class="invisible">x</div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#cv">Curriculum</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#education">Educación</a>
+                <a href="#contact">Contacto</a>
+                <br>
+                <br>
+                <br>
+                <a href="#top">Cerrar</a>
+            </ul>
+        </div>
+    </div>
+
     <nav>
         <a href="#home" style='--start-color: #007FC0; --end-color: #00DFD8;'>Inicio</a>
         <a href="#about" style='--start-color: #7928CA; --end-color: #FF0080;'>Sobre mí</a>
@@ -198,7 +228,8 @@
         <div class="divider">
             <div class="left-container">
                 <p>SEPTIEMBRE 2022 - ABRIL 2023</p>
-                <h3>Becario de desarrollo de software - <span style="color: rgb(80, 80, 80); display: inline;">Robert Bosch GmBH.</span></h3>
+                <h3>Becario de desarrollo de software - <span style="color: rgb(80, 80, 80); display: inline;">Robert
+                        Bosch GmBH.</span></h3>
                 <ul>
                     <li>Desarrollo de plataforma con Angular para uso interno de ingenieros de planta.</li>
                     <li>Implementación de servicios de Azure, así como consumo de APIs creadas en esta misma plataforma.
@@ -216,7 +247,8 @@
         <div class="divider">
             <div class="left-container">
                 <p>ENERO 2022 - ABRIL 2022</p>
-                <h3>Becario de desarrollo - <span style="color: rgb(80, 80, 80); display: inline;">LinkThinks.</span></h3>
+                <h3>Becario de desarrollo - <span style="color: rgb(80, 80, 80); display: inline;">LinkThinks.</span>
+                </h3>
                 <ul>
                     <li>Testear APIs propias de la empresa.</li>
                     <li>Creación de nuevas funciones para consultas en bases de datos no relacionales.</li>
@@ -235,7 +267,9 @@
         <div class="divider">
             <div class="left-container">
                 <p>SEPTIEMBRE 2020 - ABRIL 2024</p>
-                <h3>Ingeniería en desarrollo y gestión de software - <span style="color: rgb(80, 80, 80); display: inline;">Universidad Tecnológica del Norte de Aguascalientes.</span></h3>
+                <h3>Ingeniería en desarrollo y gestión de software - <span
+                        style="color: rgb(80, 80, 80); display: inline;">Universidad Tecnológica del Norte de
+                        Aguascalientes.</span></h3>
             </div>
             <div class="right-container">
                 <img width="180" src="./img/utna.png" alt="">
@@ -251,6 +285,7 @@
     <script src="./js/grayscale.js"></script>
     <script src="./js/code.hover.js"></script>
     <script src="./js/globe.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

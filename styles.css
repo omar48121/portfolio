@@ -304,8 +304,12 @@ mark {
     cursor: pointer;
 }
 
+.invisible {
+    display: none;
+}
+
 /* media queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     body {
         display: grid;
         place-items: center;
@@ -361,5 +365,19 @@ mark {
 
     .xxx {
         margin-top: 35px;
+    }
+
+    .left-container {
+        margin-right: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .invisible {
+        display: block;
+        visibility: hidden;
+        width: 600px;
     }
 }

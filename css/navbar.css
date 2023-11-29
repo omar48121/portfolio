@@ -1,0 +1,94 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.navbar {
+    width: 500px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 35px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1001;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .overlay.show {
+        display: block;
+    }
+}
