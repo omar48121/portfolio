@@ -75,6 +75,7 @@ nav>a {
     font-weight: 500;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    margin: 0 10px;
 }
 
 nav>a:hover {
@@ -308,6 +309,26 @@ mark {
     display: none;
 }
 
+.utna {
+    padding: 20px;
+    border: 1px solid rgb(23, 23, 212);
+    border: 1px solid #007FC0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+/* make two columns of glow cards below 1380px */
+@media screen and (max-width: 1280px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .glow-card {
+        margin-bottom: 40px;
+    }
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
     body {
@@ -379,5 +400,12 @@ mark {
         display: block;
         visibility: hidden;
         width: 600px;
+    }
+}
+
+/* media query specifically for 1080px */
+@media screen and (min-width: 1367px) {
+    .globe {
+        height: 35vmin;
     }
 }
