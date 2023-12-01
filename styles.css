@@ -354,7 +354,8 @@ mark {
 
     .glow-card {
         margin-bottom: 40px;
-        width: 50%;
+        width: 70%;
+        height: auto;
     }
 
     .glow-card>div>h3 {
@@ -362,7 +363,11 @@ mark {
     }
 
     .glow-card>div>p {
-        font-size: 17px;
+        font-size: 18px;
+    }
+
+    .btn-view {
+        font-size: 22px;
     }
 
     .profile {
@@ -388,6 +393,10 @@ mark {
         font-size: 22px;
     }
 
+    .form {
+        font-size: 22px;
+    }
+
     .xxx {
         margin-top: 35px;
     }
@@ -404,6 +413,12 @@ mark {
         display: block;
         visibility: hidden;
         width: 600px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .glow-card {
+        height: 450px;
     }
 }
 
@@ -444,7 +459,7 @@ textarea {
 }
 
 .btn-submit:disabled {
-    background-color: #4a4d4e;
-    color: #fff;
+    background-color: #4a4d4e !important;
+    color: gray;
     cursor: not-allowed;
 }

@@ -5,13 +5,13 @@ let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 btnSubmit.addEventListener("click", function (event) {
     if (document.getElementById("name").value === "") {
-        alert("Por favor, ingrese su nombre");
+        alert("Por favor, ingresa tu nombre");
     } else if (document.getElementById("mail").value === "") {
-        alert("Por favor, ingrese su correo electrónico");
+        alert("Por favor, ingresa tu correo electrónico");
     } else if (!emailRegex.test(document.getElementById("mail").value)) {
-        alert("Por favor, ingrese un correo electrónico válido");
+        alert("Por favor, ingresa un correo electrónico válido");
     } else if (document.getElementById("message").value === "") {
-        alert("Por favor, ingrese un mensaje");
+        alert("Por favor, ingresa un mensaje");
     } else {
         btnSubmit.disabled = true;
         sendEmail();
@@ -27,7 +27,17 @@ function sendEmail() {
 
     emailjs.send("default_service", "contact_form", templateParams)
         .then(function (response) {
-            alert("Correo enviado con éxito", response);
+            Toastify({
+                text: "Correo enviado con éxito",
+                duration: 3000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #25aae1, #3f86ed)",
+                }
+            }).showToast();
 
             document.getElementById("name").value = "";
             document.getElementById("mail").value = "";
@@ -35,6 +45,18 @@ function sendEmail() {
 
             btnSubmit.disabled = false;
         }, function (error) {
-            alert("Error al enviar el correo", error);
+            Toastify({
+                text: "Error al enviar el correo",
+                duration: 3000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #FF4D4D, #F92828)",
+                }
+            }).showToast();
+
+            btnSubmit.disabled = false;
         });
 }
