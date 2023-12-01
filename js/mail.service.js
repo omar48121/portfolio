@@ -36,6 +36,7 @@ function sendEmail() {
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
                     background: "linear-gradient(to right, #25aae1, #3f86ed)",
+                    fontSize: "20px"
                 }
             }).showToast();
 
@@ -54,7 +55,7 @@ function sendEmail() {
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
                     background: "linear-gradient(to right, #FF4D4D, #F92828)",
-                    fontSize: "18px"
+                    fontSize: "20px"
                 }
             }).showToast();
 

@@ -414,6 +414,10 @@ mark {
         visibility: hidden;
         width: 600px;
     }
+
+    .btn-submit, .btn-download {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 425px) {
