@@ -21,9 +21,11 @@
 .mb {
     margin-bottom: 40px;
 }
+
 .mt {
     margin-top: 40px;
 }
+
 .mt-x {
     margin-top: 150px;
 }
@@ -216,7 +218,7 @@ mark {
     flex-direction: column;
 }
 
-.glow-card > div > p {
+.glow-card>div>p {
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -355,11 +357,11 @@ mark {
         width: 50%;
     }
 
-    .glow-card > div > h3 {
+    .glow-card>div>h3 {
         margin: 5px auto;
     }
 
-    .glow-card > div > p {
+    .glow-card>div>p {
         font-size: 17px;
     }
 
@@ -380,7 +382,9 @@ mark {
         height: 100vmin;
     }
 
-    p, li, h3 {
+    p,
+    li,
+    h3 {
         font-size: 22px;
     }
 
@@ -408,4 +412,39 @@ mark {
     .globe {
         height: 35vmin;
     }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.form>input,
+textarea {
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #007FC0;
+}
+
+textarea {
+    padding: 15px;
+}
+
+.btn-submit {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    height: 50px;
+}
+
+.btn-submit:disabled {
+    background-color: #4a4d4e;
+    color: #fff;
+    cursor: not-allowed;
 }
