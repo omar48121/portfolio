@@ -1,4 +1,4 @@
-emailjs.init("HRHHZYtFfTJ9wfile");
+emailjs.init("PX_wPOkQAeWCjwH0qprYl");
 
 let btnSubmit = document.getElementById("btn-submit");
 let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -54,6 +54,7 @@ function sendEmail() {
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
                     background: "linear-gradient(to right, #FF4D4D, #F92828)",
+                    fontSize: "18px"
                 }
             }).showToast();
 
