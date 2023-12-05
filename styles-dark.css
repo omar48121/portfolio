@@ -230,7 +230,7 @@ mark {
 }
 
 .glow-card:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: color 1s;
 }
 
