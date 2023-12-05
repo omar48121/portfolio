@@ -327,6 +327,18 @@
                     console.log('Error al registrar el Service Worker:', error);
                 });
         }
+
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        function adjustMobileZoom() {
+            if (isMobile) {
+                setTimeout(function () {
+                    document.body.style.zoom = "100%";
+                }, 100);
+            }
+        }
+
+        window.onload = adjustMobileZoom;
     </script>
 
 </body>
