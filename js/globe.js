@@ -679,15 +679,9 @@ const markers = [{
   
   init(markers);
 
-  document.addEventListener('styleChanged', function () {
-    console.log("event fired")
+  // document.addEventListener('styleChanged', function () {
+  //   console.log("event fired")
     
-    const isDarkMode = window.isDarkMode;
-    if (isDarkMode) {
-      $.ctx.fillStyle = '#030303';
-    } else {
-      $.ctx.fillStyle = '#fff';
-    }
-
-    drawGlobe($.ctx, $.colors.ocean);
-  });
+  //   $.ctx.fillStyle = '#123bca';
+  //   console.log($.ctx.fillStyle)
+  // });
