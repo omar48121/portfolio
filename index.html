@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/code.hover.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link id="stylesheet" rel="stylesheet" href="./styles.css">
     <title>Omar Rodriguez</title>
 </head>
 
@@ -31,6 +31,9 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="navbar">
+        <img id="sun" width="48px" src="./img/icons/sun.png" alt="">
+        <img id="moon" width="48px" src="./img/icons/moon.png" alt="">
+
         <div class="menu-toggle" id="mobile-menu">
             <span></span>
             <span></span>
@@ -307,6 +310,7 @@
         </div>
     </div>
 
+    <script src="./js/dark.mode.js"></script>
     <script src="./js/grayscale.js"></script>
     <script src="./js/code.hover.js"></script>
     <script src="./js/globe.js"></script>
@@ -318,7 +322,7 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
                 .then((registration) => {
-                    console.log('Service Worker registrado con éxito:', registration);
+                    // console.log('Service Worker registrado con éxito:', registration);
                 })
                 .catch((error) => {
                     console.log('Error al registrar el Service Worker:', error);

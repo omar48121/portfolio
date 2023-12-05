@@ -92,3 +92,11 @@
         display: block;
     }
 }
+
+#sun, #moon {
+    margin-right: 30px;
+}
+
+#moon {
+    margin-top: 9px;
+}

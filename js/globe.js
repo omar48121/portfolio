@@ -534,8 +534,13 @@ const markers = [{
     
     updateState($.timing.delta);
     
-    // clear
-    $.ctx.fillStyle = '#fff';
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+      $.ctx.fillStyle = '#030303';
+    } else {
+      $.ctx.fillStyle = '#fff';
+    }
+
     $.ctx.fillRect(0, 0, 1800, 1600);
     
     drawMarkers($.ctx, $.markers, false);
@@ -673,3 +678,16 @@ const markers = [{
   }
   
   init(markers);
+
+  document.addEventListener('styleChanged', function () {
+    console.log("event fired")
+    
+    const isDarkMode = window.isDarkMode;
+    if (isDarkMode) {
+      $.ctx.fillStyle = '#030303';
+    } else {
+      $.ctx.fillStyle = '#fff';
+    }
+
+    drawGlobe($.ctx, $.colors.ocean);
+  });

@@ -1,4 +1,4 @@
-emailjs.init("PX_wPOkQAeWCjwH0qprYl");
+emailjs.init("HRHHZYtFfTJ9wfile");
 
 let btnSubmit = document.getElementById("btn-submit");
 let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
